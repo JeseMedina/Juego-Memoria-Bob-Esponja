@@ -3,64 +3,104 @@
   src: url('Spongeboy-Me-Bob.ttf');
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+body {
+  font-family: 'Spongeboy Me Bob', sans-serif;
+  background-color: #fff;
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
-body{
-	font-family: 'Spongeboy Me Bob', sans-serif;
-	background-color: #fff;
-	background-image: url(images/background.jpg);
-	background-repeat: no-repeat;
-	min-height: 100vh;
+h1 {
+  color: #FEE12B;
+  text-align: center;
+  margin: 1.5rem 0;
 }
 
-h1{
-	color: #FEE12B;
-	text-align: center;
-	margin: 1.5rem 0;
+p {
+  color: #fff;
+  margin: 1rem 0;
 }
 
-p{
-	color: #fff;
-	margin: 1rem 0;
-}
-
-#attempts-counter{
-	color: #ED1C24;
+#attempts-counter {
+  color: #ED1C24;
 }
 
 .container {
-	margin: 0 auto;
-	text-align: center;
-	width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
 
 .button-row {
-	margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
 }
 
-button{
-	border: none;
-	background-color: #fff;
-	font-family: 'Spongeboy Me Bob', sans-serif;
-	padding: .8rem;
-	border-radius: .5rem;
+button {
+  border: none;
+  background-color: #fff;
+  font-family: 'Spongeboy Me Bob', sans-serif;
+  padding: .8rem;
+  border-radius: .5rem;
 }
 
-button:hover{
-	cursor: pointer;
-	box-shadow: #aaa 0 0 1rem .1rem;
+button:hover {
+  cursor: pointer;
+  box-shadow: #aaa 0 0 1rem .1rem;
 }
+
+/* Breakpoints para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .game-board {
-	margin-top: 3rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: center;
-	justify-items: center
+	justify-items: center;
 }
 
 .card {
@@ -74,18 +114,9 @@ button:hover{
 	background-repeat: no-repeat;
 	box-shadow: #111 0 0 1rem .1rem;
 	cursor: pointer;
+	/* vertical-align: middle; */
 }
 
 .card:hover{
 	box-shadow: #aaa 0 0 1rem .1rem;
-}
-
-
-@media screen and (max-width: 490px) {
-	body{
-		background-repeat: inherit;
-	}
-
-	.game-board {
-	grid-template-columns: repeat(2, 1fr);}
 }
