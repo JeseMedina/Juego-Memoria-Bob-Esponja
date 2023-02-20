@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Spongeboy Me Bob';
+  src: url('Spongeboy-Me-Bob.ttf');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Spongeboy Me Bob', sans-serif;
+	background-color: #fff;
+	background-image: url(images/background.jpg);
+	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+h1{
+	color: #FEE12B;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+p{
+	color: #fff;
+	margin: 1rem 0;
+}
+
+#attempts-counter{
+	color: #ED1C24;
+}
+
+.container {
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+}
+
+.button-row {
+	margin-bottom: 20px;
+}
+
+button{
+	border: none;
+	background-color: #fff;
+	font-family: 'Spongeboy Me Bob', sans-serif;
+	padding: .8rem;
+	border-radius: .5rem;
+}
+
+button:hover{
+	cursor: pointer;
+	box-shadow: #aaa 0 0 1rem .1rem;
+}
+
+.game-board {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	justify-items: center
+}
+
+.card {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	border: 1px solid #fff;
+	background-color: #fff;
+	background-image: url("images/front.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	box-shadow: #111 0 0 1rem .1rem;
+	cursor: pointer;
+}
+
+.card:hover{
+	box-shadow: #aaa 0 0 1rem .1rem;
+}
+
+
+@media screen and (max-width: 490px) {
+	body{
+		background-repeat: inherit;
+	}
+
+	.game-board {
+	grid-template-columns: repeat(2, 1fr);}
+}
