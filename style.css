@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'Spongeboy Me Bob';
   src: url('Spongeboy-Me-Bob.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
 }
 
 body {
@@ -12,29 +15,31 @@ body {
   min-height: 100vh;
 }
 
+
+.head{
+  min-height: 30vh;
+}
+
 h1 {
   color: #FEE12B;
   text-align: center;
-  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
 }
 
 p {
   color: #fff;
   margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 #attempts-counter {
   color: #ED1C24;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
-}
-
 .button-row {
-  margin-bottom: 1.25rem;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -54,69 +59,51 @@ button:hover {
   box-shadow: #aaa 0 0 1rem .1rem;
 }
 
-/* Breakpoints para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
+
+
+/* board */
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 50%;
+  height: 70vh;
 }
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  button {
-    font-size: 1.5rem;
-    padding: 1.5rem;
-    border-radius: .3rem;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .game-board {
+  margin-top: .5rem;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	justify-content: center;
 	justify-items: center;
+  gap: 1rem;
 }
 
 .card {
-	width: 100px;
-	height: 100px;
-	margin: 10px;
-	border: 1px solid #fff;
+	min-width: 6rem;
+	min-height: 6rem;
+	border: .1rem solid #fff;
 	background-color: #fff;
 	background-image: url("images/front.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	box-shadow: #111 0 0 1rem .1rem;
 	cursor: pointer;
-	/* vertical-align: middle; */
 }
 
 .card:hover{
 	box-shadow: #aaa 0 0 1rem .1rem;
 }
+
+@media (max-width: 880px) {
+ .container{
+  width: 80%;
+ }
+}
+
+@media (max-width: 540px) {
+
+  .container{
+   width: 95%;
+  }
+ }
