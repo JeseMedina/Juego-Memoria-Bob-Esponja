@@ -1,5 +1,5 @@
 # Título del proyecto
-![Imagen del proyecto]()
+![Imagen del proyecto](https://github.com/JeseMedina/Juego-Memoria-Bob-Esponja/blob/main/images/bob-esponja.jpg?raw=true)
 
 ## Descripción
 
