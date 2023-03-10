@@ -19,7 +19,7 @@ Esta página web es un juego de memoria de Bob Esponja. Es un juego sencillo per
 
 * [skajese@gmail.com](skajese@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/jesemedina/?original_referer=)
-* [Porfolio web]()
+* [Porfolio web](https://ephemeral-jelly-35c7e3.netlify.app/)
 
 ## Instalación 
 Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
